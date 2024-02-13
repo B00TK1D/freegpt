@@ -3,6 +3,9 @@ import json
 import time
 
 
+MODEL = 'gpt-4-1106-preview'
+
+
 token = None
 
 messages = []
@@ -93,7 +96,7 @@ def chat(message):
                 'Editor-Version': 'vscode/1.80.1',
             }, json={
                 'intent': False,
-                'model': 'gpt-4-1106-preview',
+                'model': MODEL,
                 'temperature': 0,
                 'top_p': 1,
                 'n': 1,
